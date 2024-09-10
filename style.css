@@ -54,9 +54,10 @@
 body {
   background-color: #f7f3fa;
   margin-top: 70px;
+  width: 100%;
 }
 .homeContainer {
-  width: 500px;
+  max-width: 500px;
   margin: 10px auto;
   background-color: white;
   border-radius: 15px;
@@ -64,11 +65,16 @@ body {
   margin-top: 30px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
-
+.aboutContainer {
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 .worksRow {
   margin: 20px auto;
-
 }
 .allRow{
     margin-top:40px;
@@ -76,9 +82,7 @@ body {
     border-radius: 15px;
     padding: 15px;
 }
-.imgCol{
-    margin:15px auto;
-}
+
 .textCol{
     margin:15px auto;
 
@@ -135,4 +139,33 @@ body {
  margin:30px auto;
  display: block;
 max-width: 85%;
+}
+
+
+@media (max-width: 576px) {
+  .allRow{
+    padding-right:5px;
+    padding-left:5px;
+    font-size: 14px;
+  } 
+.homeContainer{
+  padding-right:5px;
+  padding-left:5px;
+}
+.projectTitle{
+  font-size: 18px;
+}
+.name{
+  font-size: 24px;
+}
+.hi{
+  font-size: 20px;
+}
+.aboutContainer{
+  padding-right:5px;
+  padding-left:5px;
+}
+
+
+
 }
